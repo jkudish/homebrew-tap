@@ -7,20 +7,20 @@ class Librarium < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/jkudish/librarium/releases/download/v0.1.0/librarium-macos-arm64"
-      sha256 "41e5c72f32d9911daca1c89b6b1e9b68cd9b0ef17f177ffbd363d8860bbd533a"
+      sha256 "3a192dc71c2ccbd32045d84935a0a8f961f4b7233f767dc87c414b912c946d83"
     else
       url "https://github.com/jkudish/librarium/releases/download/v0.1.0/librarium-macos-x64"
-      sha256 "c24ebafdef03bc7d0d8159ebcaf391f16eb377f5a9b876693ce348ce50be6c66"
+      sha256 "71c0e4f0d85c3a65ad36fc3162c0fcb41c543346294b3b1c1f4ce76a92978c69"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/jkudish/librarium/releases/download/v0.1.0/librarium-linux-arm64"
-      sha256 "31134a5ae1d8140b4e5692bc02a72af9d5151597572ce7437046440aa9f1e07c"
+      sha256 "239096dbbab98d1d2d1fc456a5e3e95873e7c718e2def5828de5b04b02880a4d"
     else
       url "https://github.com/jkudish/librarium/releases/download/v0.1.0/librarium-linux-x64"
-      sha256 "097ae31059b1572fb9cecd9da4c536cbb6b74cc9a42590c247e75f76cd1675e6"
+      sha256 "6410552e1571652b882127309090cc0ff5f655ded0686b42096ad4aad7730408"
     end
   end
 
