@@ -1,26 +1,26 @@
 class Librarium < Formula
   desc "Fan out research queries to multiple search and deep-research APIs in parallel"
   homepage "https://github.com/jkudish/librarium"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jkudish/librarium/releases/download/v1.2.0/librarium-macos-arm64"
-      sha256 "aa6bbe2aaecd65d88936e11c7ed0d6d29dc15559ddcc3fba7150c601198ad987"
+      url "https://github.com/jkudish/librarium/releases/download/v1.3.0/librarium-macos-arm64"
+      sha256 "ad7be9d17aca1ad01cc6528e1832ce3f320e79590bf9f28c8411f69e99a4b910"
     else
-      url "https://github.com/jkudish/librarium/releases/download/v1.2.0/librarium-macos-x64"
-      sha256 "91407b4764f3171dcfb392e5a5963913dcef5cce68e7498a4f16d125a71d6672"
+      url "https://github.com/jkudish/librarium/releases/download/v1.3.0/librarium-macos-x64"
+      sha256 "a8d5cd50c945d1bab81acb6f6430740c889bab33d4398192cfbcbec39e2bb59a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jkudish/librarium/releases/download/v1.2.0/librarium-linux-arm64"
-      sha256 "d2c9b3b294043c26860cf9b6d9f0eab6c5ea28ce78e1c896e1a27edc836a590c"
+      url "https://github.com/jkudish/librarium/releases/download/v1.3.0/librarium-linux-arm64"
+      sha256 "604bddfa90c6ec27a902cec77d1fff3fa1e25a9967e9153c95e2206aafa833b7"
     else
-      url "https://github.com/jkudish/librarium/releases/download/v1.2.0/librarium-linux-x64"
-      sha256 "a351fe4b651bcbfa945fb21cf26cc9f42a296030a35db2a933f816ac7eab3a2c"
+      url "https://github.com/jkudish/librarium/releases/download/v1.3.0/librarium-linux-x64"
+      sha256 "824b4aebc5b9cbac0568c1e50d9de8fa40172f9f7973d6ee4c2df0fa1f692105"
     end
   end
 
