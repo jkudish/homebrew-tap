@@ -1,32 +1,33 @@
+# candidate-sha: 13ecc0451f44a7db852c9e5b6b17fd7391fa6f06
+# candidate-fingerprint: sha256:c8c1430db5d5c72fa563ad58a3aaa24ec9b22d04b57ce4fed104917bf2b78d0b
 class Librarium < Formula
-  desc "Fan out research queries to multiple search and deep-research APIs in parallel"
-  homepage "https://github.com/jkudish/librarium"
-  version "1.4.1"
+  desc "Evidence-aware multi-provider research"
+  homepage "https://librarium.si"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jkudish/librarium/releases/download/v1.4.1/librarium-macos-arm64"
-      sha256 "c73661bba73383ac4a8de18feedf4c235f5dd3b58697742798788b6409298d74"
+      url "https://github.com/jkudish/librarium/releases/download/v2.0.0/librarium-macos-arm64"
+      sha256 "be9ab234f54476cf3a635e86a7ae5405ce3edb68607225c3e96629c4fb595fef"
     else
-      url "https://github.com/jkudish/librarium/releases/download/v1.4.1/librarium-macos-x64"
-      sha256 "2d3dfd9fb64ac37188fcdda7623a42f96221a89e671eb8ff3e85e87685d075ea"
+      url "https://github.com/jkudish/librarium/releases/download/v2.0.0/librarium-macos-x64"
+      sha256 "ea663ef626a1abda252ac541813ac9695c9756ef4352fd91979ef8b56e7a9f2f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jkudish/librarium/releases/download/v1.4.1/librarium-linux-arm64"
-      sha256 "07a5eda08c2d90b7a04ce325894efbdcc7ca2e98824bd720b4258a787ad6b5ca"
+      url "https://github.com/jkudish/librarium/releases/download/v2.0.0/librarium-linux-arm64"
+      sha256 "4fada5a887772936c57567cd4ec06be7ee8498350c4768bce948365c40d7c9cc"
     else
-      url "https://github.com/jkudish/librarium/releases/download/v1.4.1/librarium-linux-x64"
-      sha256 "71f16500c435cfdd94ad04ab3d52f313d248f5c74f601d7f3361a65be0bb7f57"
+      url "https://github.com/jkudish/librarium/releases/download/v2.0.0/librarium-linux-x64"
+      sha256 "18b0cee6d141b6de97949b346bd3149d51c4bc0f1d784f34407ad705d27f0f55"
     end
   end
 
   def install
-    binary_name = "librarium"
-    bin.install Dir["librarium-*"].first => binary_name
+    bin.install Dir["librarium-*"].first => "librarium"
   end
 
   test do
